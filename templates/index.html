@@ -1,0 +1,47 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>will you be my valentain?</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+  </head>
+  <body>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <div class="bgoverlay">
+      <div class="container">
+        <span class="ico">
+          <span class="ico2"></span> <span class="title"><div class="text">нажми</div></span>
+        </span>
+        <div class="endtext">
+          <h1>я тебя люблю</h1>
+          <h2>будешь моей валентинкой?</h2>
+        </div>
+      </div>
+    </div>
+    <script defet>
+      $(document).ready(function () {
+        $(".title").click(function () {
+          $(".container").addClass("open");
+        });
+
+        $(".close").click(function () {
+          $(".container").removeClass("open");
+        });
+      });
+    </script>
+  </body>
+</html>
